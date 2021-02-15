@@ -35,6 +35,7 @@ namespace MovementSystem.Transitions
         {
             if (Input.GetKey(KeyCode.E) && canClimb)
             {
+                _Player.transform.rotation = ladder.transform.rotation;
                 if (getWhere == "bot")
                 {
                     _Player.transform.position = ladder.botTransform.transform.position;
